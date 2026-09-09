@@ -171,8 +171,8 @@ export default function About() {
             </div>
             <div className="space-y-3 text-gray-600">
               <div>
-                <p className="font-medium text-gray-800 mb-1">駐車場事前精算機</p>
-                <p className="text-sm">モール２-４階　連絡通路前にございます。</p>
+                <p className="font-medium text-gray-800 mb-1">ATM</p>
+                <p className="text-sm">2階エレベーターホールにございます。</p>
               </div>
             </div>
           </div>

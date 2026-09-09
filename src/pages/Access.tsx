@@ -138,7 +138,7 @@ export default function Access() {
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <h4 className="text-base mb-2 text-gray-800">駐車場営業時間</h4>
                       <p className="text-lg text-gray-700">7:00～24:30</p>
-                      <p className="text-sm text-gray-600 mt-1">（24:30～翌7:00までは出庫できません）</p>
+                      <p className="text-sm text-gray-600 mt-1">（24:30～翌7:00までは入出庫できません）</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <h4 className="text-base mb-3 text-gray-800">ご利用料金</h4>
@@ -164,7 +164,7 @@ export default function Access() {
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <h4 className="text-sm mb-2 text-gray-800">駐車制限</h4>
-                      <p className="text-sm text-gray-700">高さ 2.3m未満 長さ 5.0m未満 幅 1.9m未満 重量 2.0t未満</p>
+                      <p className="text-sm text-gray-700">高さ 2.3m未満（屋上は2.1m） 長さ 5.0m未満 幅 1.9m未満 重量 2.0t未満</p>
                       <p className="text-xs text-gray-600 mt-2">※自動二輪車は不可</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">

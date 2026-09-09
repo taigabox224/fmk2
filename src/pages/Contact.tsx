@@ -48,7 +48,7 @@ export default function Contact() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <p className="text-center text-xs md:text-base text-gray-700 mb-10">
-          「フィールズ南柏」へのご意見、ご要望、お問い合わせ等ございましたら、お気軽に下記にご連絡ください。
+          「フィールズ南柏モール2」へのご意見、ご要望、お問い合わせ等ございましたら、お気軽に下記にご連絡ください。
         </p>
 
         <div className="bg-white divide-y divide-gray-200">
@@ -65,34 +65,16 @@ export default function Contact() {
           <div className="p-6 md:p-8">
             <div className="flex items-center gap-3 mb-3">
               <HelpCircle className="w-5 h-5 text-green-600 shrink-0" />
-              <h2 className="text-sm md:text-lg font-medium text-gray-900">モールへのお問合せ・落とし物</h2>
+              <h2 className="text-sm md:text-lg font-medium text-gray-900">モールへのお問合せ・落とし物・催事出店</h2>
             </div>
             <div className="ml-8">
-              <p className="text-sm font-medium text-gray-800 mb-2">モールⅡ管理室</p>
+              <p className="text-sm font-medium text-gray-800 mb-2">モール2管理室</p>
               <div className="flex items-center gap-2 text-sm text-gray-700">
                 <Phone className="w-4 h-4 text-green-600 shrink-0" />
                 <span>TEL: 04-7160-0900</span>
                 <span className="text-gray-500">（AM9:00～PM5:00）</span>
               </div>
             </div>
-          </div>
-
-          {/* 出店（店舗） */}
-          <div className="p-6 md:p-8">
-            <div className="flex items-center gap-3 mb-3">
-              <Store className="w-5 h-5 text-purple-600 shrink-0" />
-              <h2 className="text-sm md:text-lg font-medium text-gray-900">出店（店舗）</h2>
-            </div>
-            <p className="text-sm text-gray-500 ml-8">※現在募集しておりません</p>
-          </div>
-
-          {/* 出店（催事キッチンカー） */}
-          <div className="p-6 md:p-8">
-            <div className="flex items-center gap-3 mb-3">
-              <Truck className="w-5 h-5 text-orange-600 shrink-0" />
-              <h2 className="text-sm md:text-lg font-medium text-gray-900">出店（催事キッチンカー）</h2>
-            </div>
-            <p className="text-sm text-gray-500 ml-8">※現在募集しておりません</p>
           </div>
         </div>
 

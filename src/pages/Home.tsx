@@ -278,7 +278,7 @@ export default function Home() {
                   }}
                 >
                   <p>ようこそ、</p>
-                  <p className="mt-8">フィールズ南柏へ</p>
+                  <p className="mt-8">フィールズ南柏モール2へ</p>
                 </h1>
                 <div className="px-6 py-5 my-4 bg-white/85 rounded-lg ">
                   <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-6 mt-10">
@@ -286,8 +286,7 @@ export default function Home() {
                     皆様の日常に彩りを添える様々なショップとサービスをご用意しております。
                   </p>
                   <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-8">
-                    ファッション、グルメ、日用品から
-                    エンターテインメントまで、 充実したフロア構成でお待ちしております。
+                    ファッション、日用品から飲食まで、 充実したフロア構成でお待ちしております。
                   </p>
                 </div>
                 <div>
@@ -672,24 +671,17 @@ export default function Home() {
           </div>
 
           {/* PC: 常に3スロット固定 */}
-          <div className="hidden md:flex" style={{ gap: "1.5rem" }}>
-            {Array.from({ length: 3 }, (_, i) => {
-              const url = snsPosts[i];
-              return (
-                <div key={i} style={{ flex: "1 1 0%", minWidth: 0 }}>
-                  {url ? (
-                    <blockquote
-                      className="instagram-media"
-                      data-instgrm-permalink={url}
-                      data-instgrm-version="14"
-                      style={{ maxWidth: "100%", width: "100%", margin: "0 auto" }}
-                    />
-                  ) : (
-                    <div />
-                  )}
-                </div>
-              );
-            })}
+          <div className="hidden md:flex justify-center" style={{ gap: "1.5rem" }}>
+            {snsPosts.slice(0, 3).map((url, i) => (
+              <div key={i} style={{ flex: "0 1 360px", minWidth: 0 }}>
+                <blockquote
+                  className="instagram-media"
+                  data-instgrm-permalink={url}
+                  data-instgrm-version="14"
+                  style={{ maxWidth: "100%", width: "100%", margin: "0 auto" }}
+                />
+              </div>
+            ))}
           </div>
 
           {/* SP: 実投稿のみカルーセル */}
