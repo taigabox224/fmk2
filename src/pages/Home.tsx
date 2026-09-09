@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import axios from "axios";
 import { fetchShops } from "@/features/shops/api/fetchShops";
+import { NEWS_API_URL } from "@/features/news/constants/news";
 import { getFloorColor } from "@/features/shops/utils/shops";
 import type { ShopItem } from "@/features/shops/types/shops";
 import mainImage from "figma:asset/images/hero.png";
@@ -141,7 +142,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("http://35.78.43.19/index.php?rest_route=/wp/v2/news")
+      .get(NEWS_API_URL)
       .then((response) => {
         const now = new Date();
         const apiItems = Array.isArray(response.data)

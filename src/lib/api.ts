@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_BASE_URL = "http://35.78.43.19/index.php?rest_route=/wp/v2";
+export const API_BASE_URL = "https://cms.fields-mall2.jp/index.php?rest_route=/wp/v2";
 
 const WP_MAX_PER_PAGE = 100;
 
